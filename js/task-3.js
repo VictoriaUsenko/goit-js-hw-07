@@ -4,7 +4,7 @@ const refs = {
 };
 
 const nameInput = (event) => {
-  const userName = event.currentTarget.value;
+  const userName = event.currentTarget.value.trim();
 
   refs.titleSpanEl.textContent = userName === "" ? "Anonymous" : userName;
 };
